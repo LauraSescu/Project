@@ -27,10 +27,10 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fas fa-shopping-cart pr-2"></i> My Cart</a>
+          <button type="button" class="nav-link" style="background-color: #343a40;border-color: #343a40;" data-toggle="modal" data-target="#cart"><i class="fas fa-shopping-cart pr-2"></i> My Cart (<span class="total-count"></span>)</button>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./login.html"><i class="fas fa-sign-in-alt pr-2"></i> Login</a>
+          <a class="nav-link" href="login.html"><i class="fas fa-sign-in-alt pr-2"></i> Login</a>
         </li>
       </ul>
     </div>
@@ -89,7 +89,7 @@
         <div class="single-post">
           <div class="blog_details pt-5">
             <h2>Description</h2>
-            <p class="excert">
+            <p class="product-description excert">
               MCSE boot camps have its supporters and its detractors. Some people do not understand why you
               should have to spend money on boot camp when you can get the MCSE study materials yourself at a
               fraction of the camp price. However, who has the willpower
@@ -104,79 +104,34 @@
               <tbody>
               <tr>
                 <td class="border-0" >Season </td>
-                <td class="border-0 text-muted" >Summer</td>
+                <td class="border-0 text-muted product-season" >Summer</td>
               </tr>
               <tr>
                 <td class="border-0">Color</td>
-                <td class="border-0 text-muted">Red</td>
+                <td class="border-0 text-muted product-color">Red</td>
               </tr>
               <tr>
                 <td class="border-0">Event type</td>
-                <td class="border-0 text-muted">Wedding</td>
+                <td class="border-0 text-muted product-event_type">Wedding</td>
               </tr>
               </tbody>
             </table>
           </div>
         </div>
 
-        <div class="comment-list pb-5">
-          <div class="navigation-top">
-            <div class="navigation-area"  style="border-bottom: 0;">
-              <div class="row top-separator mt-0">
-                <div
-                        class="col-lg-6 col-md-6 col-12 nav-left flex-row d-flex justify-content-start align-items-center">
-                  <div class="thumb">
-                    <a href="#">
-                      <img class="img-thumbnail" src="./img/01.jpg" alt="">
-                    </a>
-                  </div>
-                  <div class="arrow">
-                    <a href="#">
-                      <span class="lnr text-white ti-arrow-left"></span>
-                    </a>
-                  </div>
-                  <div class="detials pl-2">
-                    <p class="float-left pt-2">Prev Post</p>
-                    <a class="float-left link-bottom" href="#" >
-                      <h4>Space The Final Frontier</h4>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-12 nav-right flex-row d-flex justify-content-end align-items-center">
-                  <div class="detials pr-2">
-                    <p class="float-right pt-2">Next Post</p>
-                    <a href="#" class="link-bottom">
-                      <h4>Telescopes 101</h4>
-                    </a>
-                  </div>
-                  <div class="arrow">
-                    <a href="#" class="link-bottom">
-                      <span class="lnr text-white ti-arrow-right"></span>
-                    </a>
-                  </div>
-                  <div class="thumb">
-                    <a href="#">
-                      <img class="img-thumbnail" style="border-radius: 0;" src="./img/02.jpg" alt="">
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
 
       <div class="col-lg-4 pb-5 ">
         <div class="blog_right_sidebar sidebar">
           <aside class="single_sidebar_widget ">
-            <p style="font-size: 30px;" class="mb-0 font-weight-light">My Flower Day</p>
-            <p style="color: #8a8a8a;">Summer</p>
+            <p style="font-size: 30px;" class="mb-0 font-weight-light product-name">My Flower Day</p>
+            <p style="color: #8a8a8a;" class="product-season">Summer</p>
             <div class="row">
               <div class="col-12">
-                <h3 class="mt-1 mb-3">$30.00</h3>
+                <h3 class="mt-1 mb-3 product-price">$30.00</h3>
               </div>
             </div>
-            <button class="buy-button w-100" type="submit">Add to my cart</button>
+            <button class="buy-button w-100 add-to-cart" >Add to my cart</button>
           </aside>
         </div>
       </div>
@@ -203,12 +158,39 @@
   </div>
 </footer>
 
+
+<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="alert-success"><h3>Thank you for your purchase! </h3></div>
+        <table class="show-cart table">
+
+        </table>
+        <div>Total price: $<span class="total-cart"></span></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary order-now">Order now</button>
+        <button class="clear-cart btn btn-danger">Clear Cart</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script src="js/jquery.min.js"></script>
 <script src="https://kit.fontawesome.com/5a300739c3.js" crossorigin="anonymous"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/slick.min.js"></script>
+<script src="js/store.js"></script>
 
 <script type="text/javascript">
   $(document).ready(function(){

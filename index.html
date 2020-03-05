@@ -25,10 +25,10 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fas fa-shopping-cart pr-2"></i> My Cart</a>
+            <button type="button" class="nav-link" style="background-color: #343a40;border-color: #343a40;" data-toggle="modal" data-target="#cart"><i class="fas fa-shopping-cart pr-2"></i> My Cart (<span class="total-count"></span>)</button>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fas fa-sign-in-alt pr-2"></i> Login</a>
+            <a class="nav-link" href="login.html"><i class="fas fa-sign-in-alt pr-2"></i> Login</a>
           </li>
         </ul>
       </div>
@@ -90,33 +90,33 @@
         </div>
         <div class="row">
           <div class=" col-md-6 col-lg-3 pb-4">
-            <a href="listing.html" class="card" style="text-decoration: none;">
-              <div class="season-hover text-center">
-                <img class="d-block img-fluid" src="img/spring.png" alt="First slide">
+            <a href="#" class="card spring-link" style="text-decoration: none;">
+              <div class="season-hover text-center ">
+                <img class="d-block img-fluid" src="img/spring.jpg">
                 <h3 class="p-3">Spring flowers</h3>
               </div>
             </a>
           </div>
           <div class=" col-md-6 col-lg-3 pb-4">
             <a href="listing.html" class="card" style="text-decoration: none;">
-              <div class="season-hover text-center">
-                <img class="d-block img-fluid" src="img/summer.jpeg" alt="First slide">
+              <div class="season-hover text-center summer-link">
+                <img class="d-block img-fluid" src="img/summer.jpeg">
                 <h3 class="p-3">Summer flowers</h3>
               </div>
             </a>
           </div>
           <div class=" col-md-6 col-lg-3 pb-4">
             <a href="listing.html" class="card" style="text-decoration: none;">
-              <div class="season-hover text-center">
-                <img class="d-block img-fluid" src="img/autumn.jpg" alt="First slide">
+              <div class="season-hover text-center autumn-link">
+                <img class="d-block img-fluid" src="img/autumn.jpg">
                 <h3 class="p-3">Autumn flowers</h3>
               </div>
             </a>
           </div>
           <div class=" col-md-6 col-lg-3 pb-4">
             <a href="listing.html" class="card" style="text-decoration: none;">
-              <div class="season-hover text-center">
-                <img class="d-block img-fluid" src="img/winter.png" alt="First slide">
+              <div class="season-hover text-center winter-link">
+                <img class="d-block img-fluid" src="img/winter.jpg">
                 <h3 class="p-3">Winter flowers</h3>
               </div>
             </a>
@@ -161,139 +161,7 @@
         <span></span>
         <h3 class="section-title pb-5">Our most loved flowers</h3>
       </div>
-      <div class="res">
-        <div class="card h-300 m-3 float-left" >
-          <a href="product.html">
-            <img class="card-img-top" src="img/f01.jpg" alt="">
-            <div class="card-footer">
-              <div class="bottom-hover">
-                <div class="text-center">
-                  <div class="apply_btn">
-                    <button class="boxed-btn" ><i class="fas fa-shopping-cart pr-2"></i>Add to cart</button>
-                  </div>
-                </div>
-              </div>
-              <h4 class="card-title theme-success">
-                <a href="#" class="site-color">Alta One</a>
-              </h4>
-              <h5>$39.99</h5>
-            </div>
-          </a>
-        </div>
-
-        <div class="card h-300 m-3 float-left">
-          <a href="product.html">
-            <img class="card-img-top" src="img/f02.jpg" alt="">
-            <div class="card-footer">
-              <div class="bottom-hover">
-                <div class="text-center">
-                  <div class="apply_btn">
-                    <button class="boxed-btn" ><i class="fas fa-shopping-cart pr-2"></i>Add to cart</button>
-                  </div>
-                </div>
-              </div>
-              <h4 class="card-title theme-success">
-                <a href="#" class="site-color">Flower Top</a>
-              </h4>
-              <h5>$45.99</h5>
-            </div>
-          </a>
-        </div>
-
-        <div class="card h-300 m-3 float-left">
-          <a href="product.html">
-            <img class="card-img-top" src="img/f03.jpg" alt="">
-            <div class="card-footer">
-              <div class="bottom-hover">
-                <div class="text-center">
-                  <div class="apply_btn">
-                    <button class="boxed-btn" ><i class="fas fa-shopping-cart pr-2"></i>Add to cart</button>
-                  </div>
-                </div>
-              </div>
-              <h4 class="card-title theme-success">
-                <a href="#" class="site-color">The One</a>
-              </h4>
-              <h5>$24.99</h5>
-            </div>
-          </a>
-        </div>
-
-        <div class="card h-300 m-3 float-left">
-          <a href="product.html">
-            <img class="card-img-top" src="img/f04.jpg" alt="">
-            <div class="card-footer">
-              <div class="bottom-hover">
-                <div class="text-center">
-                  <div class="apply_btn">
-                    <button class="boxed-btn" ><i class="fas fa-shopping-cart pr-2"></i>Add to cart</button>
-                  </div>
-                </div>
-              </div>
-              <h4 class="card-title theme-success">
-                <a href="#" class="site-color">Guest Flowers</a>
-              </h4>
-              <h5>$19.99</h5>
-            </div>
-          </a>
-        </div>
-
-        <div class="card h-300 m-3 float-left">
-          <a href="product.html">
-            <img class="card-img-top" src="img/f05.jpg" alt="">
-            <div class="card-footer">
-              <div class="bottom-hover">
-                <div class="text-center">
-                  <div class="apply_btn">
-                    <button class="boxed-btn" ><i class="fas fa-shopping-cart pr-2"></i>Add to cart</button>
-                  </div>
-                </div>
-              </div>
-              <h4 class="card-title theme-success">
-                <a href="#" class="site-color">From the heart</a>
-              </h4>
-              <h5>$34.99</h5>
-            </div>
-          </a>
-        </div>
-
-        <div class="card h-300 m-3 float-left">
-          <a href="product.html">
-            <img class="card-img-top" src="img/f06.jpg" alt="">
-            <div class="card-footer">
-              <div class="bottom-hover">
-                <div class="text-center">
-                  <div class="apply_btn">
-                    <button class="boxed-btn" ><i class="fas fa-shopping-cart pr-2"></i>Add to cart</button>
-                  </div>
-                </div>
-              </div>
-              <h4 class="card-title theme-success">
-                <a href="#" class="site-color">Valentine</a>
-              </h4>
-              <h5>$14.99</h5>
-            </div>
-          </a>
-        </div>
-
-        <div class="card h-300 m-3 float-left">
-          <a href="product.html">
-            <img class="card-img-top" src="img/f07.jpg" alt="">
-            <div class="card-footer">
-              <div class="bottom-hover">
-                <div class="text-center">
-                  <div class="apply_btn">
-                    <button class="boxed-btn" ><i class="fas fa-shopping-cart pr-2"></i>Add to cart</button>
-                  </div>
-                </div>
-              </div>
-              <h4 class="card-title theme-success">
-                <a href="#" class="site-color">Red Flowers</a>
-              </h4>
-              <h5>$19.99</h5>
-            </div>
-          </a>
-        </div>
+      <div class="res list-index">
       </div>
 
       <div class="text-center">
@@ -353,7 +221,32 @@
     </div>
   </footer>
 
+  <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <table class="show-cart table">
+
+          </table>
+          <div>Total price: $<span class="total-cart"></span></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary order-now">Order now</button>
+          <button class="clear-cart btn btn-danger">Clear Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="js/jquery.min.js"></script>
+  <script src="js/store.js"></script>
   <script src="https://kit.fontawesome.com/5a300739c3.js" crossorigin="anonymous"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
