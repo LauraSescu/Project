@@ -374,6 +374,14 @@ function updateList() {
 
         $('.list-items').html(output);
 
+        $('.add-to-cart').click(function(event) {
+            event.preventDefault();
+            var name = $(this).data('name');
+            var price = Number($(this).data('price'));
+            shoppingCart.addItemToCart(name, price, 1);
+            displayCart();
+        });
+
         if(paged){
             var pagin = "";
             for (i = 0; i <= (list.length/resultsPerPage); i++) {
