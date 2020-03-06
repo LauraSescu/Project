@@ -643,6 +643,7 @@ $(".list-button").on("click", function(event) {
     localStorage.removeItem('spring');
     localStorage.removeItem('autumn');
     localStorage.removeItem('winter');
+    location.href = "listing.html";
 });
 
 $('.show-cart').on("click", ".delete-item", function(event) {
