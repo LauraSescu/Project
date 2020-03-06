@@ -638,6 +638,13 @@ $('.order-now').on("click", function(event) {
     }, 1500);
 });
 
+$(".list-button").on("click", function(event) {
+    localStorage.removeItem('summer');
+    localStorage.removeItem('spring');
+    localStorage.removeItem('autumn');
+    localStorage.removeItem('winter');
+});
+
 $('.show-cart').on("click", ".delete-item", function(event) {
     var name = $(this).data('name');
     shoppingCart.removeItemFromCartAll(name);
