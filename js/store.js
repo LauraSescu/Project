@@ -325,7 +325,7 @@ function updateList() {
 
                 index +=   "<div class='card h-300 m-3 float-left'>"
                                 +"<a href='#' class='product' data-product='"+list[i].product_id+"'>"
-                                    +"<img class='card-img-top' src='"+list[i].image+"'>"
+                                    +"<img class='card-img-top' style='width:160px;' src='"+list[i].image+"'>"
                                     +"<div class='card-footer'>"
                                         +"<h4 class='card-title theme-success'>"
                                             +"<a href='#' data-name='"+list[i].name+"' data-price='"+list[i].price+"' class='site-color'>"+ list[i].name +"</a>"
