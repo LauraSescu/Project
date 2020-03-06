@@ -212,11 +212,6 @@ function updateList() {
             list.push(el);
         }
 
-        if( term !== ""){
-            li = list.filter(function (item) {
-                return item.name.includes(term);
-            });
-        }
 
         if( spring ){
             li = list.filter(function (item) {
@@ -260,8 +255,15 @@ function updateList() {
             });
         }
 
+        if( term !== ""){
+            li = list.filter(function (item) {
+                return item.name.includes(term);
+            });
+        }
 
-        $(".spring-count").html("("+ list.filter(function (item) {
+
+
+    $(".spring-count").html("("+ list.filter(function (item) {
             return item.season.includes("Spring");
         }).length +")");
 
