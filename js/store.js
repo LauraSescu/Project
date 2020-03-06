@@ -166,15 +166,6 @@ $('.search-button').click(function(event) {
     updateList();
 });
 
-
-$('.add-to-cart').click(function(event) {
-    event.preventDefault();
-    var name = $(this).data('name');
-    var price = Number($(this).data('price'));
-    shoppingCart.addItemToCart(name, price, 1);
-    displayCart();
-});
-
 $('.clear-cart').click(function() {
     shoppingCart.clearCart();
     displayCart();
@@ -635,6 +626,16 @@ $(".check-login").click(function(){
         $(".alert-danger").html(s);
         $(".alert-danger").removeClass("d-none");
     }
+});
+
+$('.order-now').on("click", function(event) {
+    $(".thank-message").removeClass("d-none");
+
+    setTimeout(function(){
+        $(".thank-message").addClass("d-none");
+        shoppingCart.clearCart();
+        displayCart();
+    }, 1500);
 });
 
 $('.show-cart').on("click", ".delete-item", function(event) {
